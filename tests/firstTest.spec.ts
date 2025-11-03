@@ -14,13 +14,6 @@ test.beforeEach(async ({ page }) => {
     .click();
 });
 
-// test.only('Turn on Dark Theme', async ({ page }) => {
-
-//   await page.locator("nb-select[status='primary'].appearance-outline.size-medium.status-primary.shape-rectangle.nb-transition").click();
-//   await page.locator("nb-option[ng-reflect-value='dark']#nb-option-7.nb-transition.ng-star-inserted").click();
-
-// });
-
 test.describe("Charts", () => {
   test.beforeEach(async ({ page }) => {
     await page.getByText("Charts", { exact: true }).click();
@@ -70,3 +63,10 @@ test.describe("Dialogs Names", () => {
 });
 
 // Hello from Windows!
+
+// test.only('Turn on Dark Theme', async ({ page }) => {
+
+//   await page.locator("nb-select[status='primary'].appearance-outline.size-medium.status-primary.shape-rectangle.nb-transition").click();
+//   await page.locator("nb-option[ng-reflect-value='dark']#nb-option-7.nb-transition.ng-star-inserted").click();
+
+// });
