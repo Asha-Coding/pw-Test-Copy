@@ -30,7 +30,7 @@ test.describe("Forms", () => {
 test.describe("Dialogs Names", () => {
   test.beforeEach(async ({ page }) => {
     await page.getByText("Modal & Overlays", { exact: true }).click();
-    await page.getByRole('link', { name: 'Dialog' }).click();
+    await page.getByRole("link", { name: "Dialog" }).click();
   });
 
   test("Fill Dialog Names", async ({ page }) => {
@@ -40,5 +40,20 @@ test.describe("Dialogs Names", () => {
   });
 });
 
-// Hello from Windows!
+// Forms Layouts Inputs
+// test("User facing locators", async ({ page }) => {
+//   await page.getByRole("textbox", { name: "Email" }).first().click();
+//   await page.getByRole("button", { name: "Sign in" }).first().click();
 
+//   await page.getByLabel("Email").first().click();
+
+//   await page.getByPlaceholder("Jane Doe").first().click();
+
+//   await page.getByText("Using the Grid").click();
+
+//   await page.getByTestId("SignIn").click();
+
+//   await page.getByTitle("IoT Dashboard").click();
+// });
+
+// Hello from Windows!
